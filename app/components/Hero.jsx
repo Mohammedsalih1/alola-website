@@ -1,10 +1,25 @@
 "use client"
 import React, { useState } from 'react';
-import { facebook, Twitter, Instagram, Linkedin, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { FaFacebook, FaTiktok} from 'react-icons/fa';
 import Image from 'next/image';
 
 const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navlinks = [
+    {
+      text: "عني",
+      url: "#about"
+    }, 
+    {
+      text :'خدماتي',
+       url: "#services"
+    }, 
+    {text :'اعمالي', url: "#work"}, 
+    {text :'اراء العملاء', url: "#clients"},
+     {text :'تواصل معي', url: "#contact"}
+  ]
 
   return (
     <div style={{ fontFamily: "'Cairo', sans-serif" }} className="min-h-screen bg-[#1a0533] text-white selection:bg-[#f9d452] selection:text-[#1a0533]" dir="rtl">
@@ -19,13 +34,13 @@ const HeroSection = () => {
           الرئيسية
         </a>
         {/* الروابط الأخرى مع تأثير الخط السفلي المتحرك من اليمين لليسار */}
-        {['عني', 'خدماتي', 'اعمالي', 'اراء العملاء', 'تواصل معي'].map((item) => (
+        {navlinks.map((item) => (
           <a 
             key={item}
-            href="#" 
+            href={item.url} 
             className="text-white hover:text-[#f9d452] relative pb-1 transition-colors duration-300 group/nav"
           >
-            {item}
+            {item.text}
             <span className="absolute bottom-0 right-0 w-0 h-0.5 bg-[#f9d452] transition-all duration-300 group-hover/nav:w-full"></span>
           </a>
         ))}
@@ -51,13 +66,13 @@ const HeroSection = () => {
               الرئيسية
             </a>
             
-            {['عني', 'خدماتي', 'اعمالي', 'اراء العملاء', 'تواصل معي'].map((item) => (
+            {navlinks.map((item, indx) => (
               <a 
-                key={item}
-                href="#" 
+                key={indx}
+                href={item.url}
                 className="text-white hover:text-[#f9d452] hover:bg-white/5 pr-2 hover:pr-4 py-2.5 rounded-xl transition-all duration-300 font-medium"
               >
-                {item}
+                {item.text}
               </a>
             ))}
           </div>
@@ -114,11 +129,10 @@ const HeroSection = () => {
 
           {/* Social Icons */}
           <div className="flex gap-5">
-            <a href="#" className="text-white hover:text-[#f9d452] transition-colors"><facebook size={22} /></a>
-            {/* <a href="#" className="text-white hover:text-[#f9d452] transition-colors"><Twitter size={22} /></a> */}
-            <a href="#" className="text-white hover:text-[#f9d452] transition-colors"><instagram size={22} /></a>
-            {/* <a href="#" className="text-white hover:text-[#f9d452] transition-colors"><Linkedin size={22} /></a> */}
-          </div>
+            <a href="" target='_blank'  className="text-white hover:text-[#f9d452] transition-colors"><FaFacebook size={22} /></a>
+            <a href="#" target='_blank' className="text-white hover:text-[#f9d452] transition-colors"><FaTiktok size={22} /></a>
+          
+          </div> 
         </div>
 
         {/* Left Side: Image and Floating Icons */}
