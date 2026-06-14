@@ -595,7 +595,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-6 pt-10 pb-20 flex flex-col md:flex-row items-center justify-between min-h-screen">
         
         <div className="w-full md:w-1/2 flex flex-col items-start text-right z-10 order-2 md:order-1 mt-12 md:mt-0">
-          <h2 className="text-[#f9d452] text-3xl md:text-4xl font-bold mb-2">مرحباً، أنا عُلا ✌️</h2>
+          <h2 className="text-[#f9d452] text-3xl md:text-4xl font-bold mb-2">مرحباً، أنا عُلا</h2>
           <h1 className="text-3xl md:text-5xl font-bold mb-6">مصممة جرافيك</h1>
           
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-lg mb-10">
