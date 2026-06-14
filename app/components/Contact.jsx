@@ -46,6 +46,10 @@ export default function ContactAndFooter() {
 
   const navlinks = [
     {
+      text: "الرئيسية",
+      url: "#top"
+    },
+    {
       text: "عني",
       url: "#about"
     }, 
