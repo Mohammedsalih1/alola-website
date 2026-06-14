@@ -365,20 +365,20 @@ import Image from 'next/image';
 
 const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 80) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   const navlinks = [
     { text: "عني", url: "#about" }, 
@@ -392,11 +392,11 @@ const HeroSection = () => {
   return (
     <div style={{ fontFamily: "'Cairo', sans-serif" }} className="bg-[#1a0533] text-white selection:bg-[#f9d452] selection:text-[#1a0533] overflow-x-hidden relative w-full" dir="rtl">
       
-      <nav className={`fixed top-0 left-0 right-0 w-full z-[100] transition-all duration-500 ease-in-out ${
+      <nav className=" w-full z-[100] transition-all duration-500 ease-in-out ${
         isScrolled 
-          ? 'bg-[#1a0533]/80 backdrop-blur-lg shadow-[0_10px_30px_rgba(0,0,0,0.3)] py-3' 
+          ? 'bg-[#1a0533]/80 backdrop-blur-lg  py-3' 
           : 'bg-transparent py-4 md:py-6'
-      }`}>
+      ">
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center relative">
           <div className="text-2xl font-bold text-[#f9d452]">
               <Image src="/logo2.png" alt="Logo" width={110} height={50} className="object-contain w-20 md:w-28" />
