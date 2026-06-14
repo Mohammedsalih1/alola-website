@@ -1,8 +1,10 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
+import { PhotoshopIcon, IllustratorIcon, FigmaIcon, InDesignIcon, CanvaIcon } from './icons/DesignIcons';
 
 const AboutMeSection = () => {
+
   return (
     <section style={{ fontFamily: "'Cairo', sans-serif" }} id="about" className="bg-[#1f013d] py-20 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
@@ -36,8 +38,18 @@ const AboutMeSection = () => {
             <p>
             أنا مصممة جرافيك متخصصة في تصميم الهوية البصرية وتصميمات السوشال ميديا، أساعد الشركات ورواد الأعمال على بناء حضور بصري احترافي يعكس هويتهم ويُميزهم عن المنافسين.            </p>
             <p>
-            أمتلك خبرة تمتد لأكثر من سنتين في مجال التصميم، وخلال هذه الفترة قدمت حلولًا إبداعية لأكثر من 100 عميل في مجالات متنوعة، مع التركيز على الجمع بين الجمال البصري والرسالة التسويقية الفعالة.            </p>
-       
+            أمتلك خبرة تمتد لأكثر من سنتين في مجال التصميم، وخلال هذه الفترة قدمت حلولًا إبداعية لأكثر من 100 عميل في مجالات متنوعة، مع التركيز على الجمع بين الجمال البصري والرسالة التسويقية الفعالة.  
+            </p>
+            <div className="flex flex-col">
+              <h3 className="text-xl font-bold mb-4">الأدوات التي أتقنها</h3>
+              <div className="flex gap-4">
+                <Image src="/photoshop.png" width={48} height={48} />
+                <Image src="/illustrator.png" width={48} height={48} />
+                <Image src="/figma.png" width={48} height={48} />
+                <Image src="/indesign.png" width={48} height={48} />
+                <Image src="/canva.png" width={48} height={48} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
