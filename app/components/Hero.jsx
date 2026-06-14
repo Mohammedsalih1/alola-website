@@ -119,12 +119,12 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
-            <button className="bg-[#f9d452] cursor-pointer text-[#1a0533] px-10 py-3 rounded-lg font-bold hover:bg-[#e2bc3d] transition-all transform hover:scale-105 shadow-lg shadow-[#f9d452]/20">
+            <a href='#work' className="bg-[#f9d452] cursor-pointer text-[#1a0533] px-10 py-3 rounded-lg font-bold hover:bg-[#e2bc3d] transition-all transform hover:scale-105 shadow-lg shadow-[#f9d452]/20">
               تصفح اعمالي
-            </button>
-            <button className="border-2 cursor-pointer border-[#f9d452] text-[#f9d452] px-8 py-3 rounded-lg font-bold hover:bg-[#f9d452] hover:text-[#1a0533] transition-all">
+            </a>
+            <a href='#contact' className="border-2 cursor-pointer border-[#f9d452] text-[#f9d452] px-8 py-3 rounded-lg font-bold hover:bg-[#f9d452] hover:text-[#1a0533] transition-all">
               تواصل معي
-            </button>
+            </a>
           </div>
 
           {/* Social Icons */}
