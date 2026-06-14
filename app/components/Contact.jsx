@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { FaFacebook, FaTiktok, FaWhatsapp} from 'react-icons/fa';
+
 
 export default function ContactAndFooter() {
   const [formData, setFormData] = useState({
@@ -108,6 +110,14 @@ export default function ContactAndFooter() {
               </span>
               <span className="text-lg font-medium" dir="ltr">+20 11 01723425</span>
             </div>
+            <div className="flex items-center gap-4">
+              <span className="bg-[#2A1B43] p-3 rounded-full text-[#f9d452]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.896-1.596-5.48-4.18-7.076-7.076l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+              </span>
+              <span className="text-lg font-medium" dir="ltr">+249116340339</span>
+            </div>
 
             {/* البريد الإلكتروني */}
             <div className="flex items-center gap-4">
@@ -197,18 +207,22 @@ export default function ContactAndFooter() {
 
         {/* أيقونات التواصل الاجتماعي */}
         <div className="flex gap-6 mb-8">
+          <a href="https://web.facebook.com/profile.php?id=61577585291365" target='_blank' rel="noreferrer" className="text-white hover:text-[#f9d452] transition-colors"><FaFacebook size={22} /></a>
+          <a href="https://www.tiktok.com/@aloladesign18?_r=1&_t=ZS-97Co8x0j1mv" target='_blank' rel="noreferrer" className="text-white hover:text-[#f9d452] transition-colors"><FaTiktok size={22} /></a>
+          <a href="https://api.whatsapp.com/message/33GTVXHSJ4TMK1?autoload=1&app_absent=0" target='_blank' rel="noreferrer" className="text-white hover:text-[#f9d452] transition-colors"><FaWhatsapp size={22} /></a>
+          
           {/* Facebook */}
-          <a href="https://web.facebook.com/profile.php?id=61577585291365" className="text-gray-400 hover:text-[#f9d452] transition-colors duration-300">
+          {/* <a href="https://web.facebook.com/profile.php?id=61577585291365" className="text-gray-400 hover:text-[#f9d452] transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6">
               <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
             </svg>
-          </a>
+          </a> */}
           {/* TikTok */}
-          <a href="#" className="text-gray-400 hover:text-[#f9d452] transition-colors duration-300">
+          {/* <a href="#" className="text-gray-400 hover:text-[#f9d452] transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512" className="w-6 h-6">
               <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
             </svg>
-          </a>
+          </a> */}
         </div>
 
         {/* حقوق النشر */}

@@ -519,7 +519,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { FaFacebook, FaTiktok} from 'react-icons/fa';
+import { FaFacebook, FaTiktok, FaWhatsapp} from 'react-icons/fa';
 import Image from 'next/image';
 
 const HeroSection = () => {
@@ -613,7 +613,9 @@ const HeroSection = () => {
 
           <div className="flex gap-5">
             <a href="https://web.facebook.com/profile.php?id=61577585291365" target='_blank' rel="noreferrer" className="text-white hover:text-[#f9d452] transition-colors"><FaFacebook size={22} /></a>
-            <a href="#" target='_blank' rel="noreferrer" className="text-white hover:text-[#f9d452] transition-colors"><FaTiktok size={22} /></a>
+            <a href="https://www.tiktok.com/@aloladesign18?_r=1&_t=ZS-97Co8x0j1mv" target='_blank' rel="noreferrer" className="text-white hover:text-[#f9d452] transition-colors"><FaTiktok size={22} /></a>
+            <a href="https://api.whatsapp.com/message/33GTVXHSJ4TMK1?autoload=1&app_absent=0" target='_blank' rel="noreferrer" className="text-white hover:text-[#f9d452] transition-colors"><FaWhatsapp size={22} /></a>
+          
           </div> 
         </div>
 
